@@ -1,0 +1,8 @@
+.title {
+  font-family: var(--text-primary);
+  font-size: 3rem;
+  color: var(--text-primary);
+  margin-top: 5rem;
+  font-weight: 400;
+  text-align: center;
+}

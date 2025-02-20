@@ -1,0 +1,43 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-100);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid var(--border);
+}
+.task:hover {
+  background-color: var(--bg-200);
+}
+.task-title {
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+}
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.task-delete {
+  background-color: var(--danger);
+  color: var(--text-secondary);
+  font-family: var(--font-secondary);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+.task-edit {
+  background-color: var(--accent);
+  color: var(--text-secondary);
+  font-family: var(--font-secondary);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+.task-edit:hover {
+  background-color: var(--warning);
+  transition: 0.3s all ease;
+}

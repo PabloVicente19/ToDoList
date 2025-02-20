@@ -1,0 +1,36 @@
+.task-form {
+  position: relative;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.task-input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  outline: none;
+  font-family: var(--font-secondary);
+}
+.task-button {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent);
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: var(--font-secondary);
+}
+.task-button:hover {
+  background-color: #1e90ff;
+}
+
+.task-error {
+  color: var(--danger);
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
