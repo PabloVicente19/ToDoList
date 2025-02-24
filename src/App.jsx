@@ -20,25 +20,21 @@ function App() {
   const [error, setError] = useState('');
 
   const handleAddTaskorEditTask = () => {
-
     const validation = tasksValidation(task);
 
     if (!validation.valid) {
       setError(validation.text);
       return;
     }
+
     if (editIndex !== null) {
-
-      // por el momento esto funciona
-      //const newTasks = tasks[editIndex];
-      //newTasks.title = task;
-
       const newTasks = tasks.map((t, i) => {
         if (i === editIndex) {
           return { title: task, completed: t.completed };
         }
         return t;
       });
+
       setTasks(newTasks);
       setEditIndex(null);
       setTask('');
@@ -63,7 +59,6 @@ function App() {
 
   return (
     <div>
-
       <Title
         text='To Do List' />
 
